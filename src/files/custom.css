@@ -1,0 +1,43 @@
+#about{
+    font-size: 50px;
+    padding: 10px 0px;
+    animation: right 1 1s linear;
+}
+#about-p{
+    animation: left 1 1s linear;
+
+}
+/* Apply hover effects */
+#a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #1D4ED8; /* Change color to blue */
+    transform: scale(1.1); /* Slightly increase the size of the icon */
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Optionally, change background color or apply shadow on hover */
+  #a:hover svg {
+    transition: all 0.3s ease;
+    transform: scale(1.1); /* Scale the icon on hover */
+  }
+  
+
+@keyframes right{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-0%);
+    }
+
+}
