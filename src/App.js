@@ -3,9 +3,11 @@ import { NavBar } from "./compontents/NavBar";
 import { About } from "./files/About";
 import Contact from "./files/Contact";
 import { FeedBack } from "./files/FeedBack";
-import Home from "./files/Herosection";
+// import Home from "./files/Herosection";
 import { Services } from "./files/Services";
 import { Routes, Route } from "react-router-dom";
+import { Skill } from "./files/Skill";
+import { Main } from "./files/Main";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
           path="/"
           element={
             <>
-              <Home />
+            <Main />
+              {/* <Home /> */}
               <About />
+              <Skill />
               <Services />
               <Contact />
               <FeedBack />

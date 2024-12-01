@@ -1,81 +1,57 @@
-import React from 'react'
+import React from 'react';
 
 export const Footer = () => {
   return (
-      <footer class="text-white bg-black body-font">
-        <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">__________________</h1>
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <img alt="testimonial" src="pic/abubakkar.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+    <>
+      <div className="bg-black text-white">
+        <div className="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
+          <div className="p-5">
+            <h3 className="font-bold text-2xl cursor-pointer text-white">Abu Bakkar Sajid</h3>
+          </div>
+          <div className="p-5">
+            <div className="text-sm uppercase text-white font-bold">Resources</div>
+            <a className="my-3 block text-white" href="/">Documentation <span className="text-teal-600 text-xs p-1"></span></a>
+            <a className="my-3 block text-white" href="/">Tutorials <span className="text-teal-600 text-xs p-1"></span></a>
+            <a className="my-3 block text-white" href="/">Support <span className="text-teal-600 text-xs p-1">New</span></a>
+          </div>
+          <div className="p-5">
+            <div className="text-sm uppercase text-white font-bold">Support</div>
+            <a className="my-3 block text-white" href="/#">Help Center <span className="text-teal-600 text-xs p-1"></span></a>
+            <a className="my-3 block text-white" href="/#">Privacy Policy <span className="text-teal-600 text-xs p-1"></span></a>
+            <a className="my-3 block text-white" href="/#">Conditions <span className="text-teal-600 text-xs p-1"></span></a>
+          </div>
+          <div className="p-5">
+            <div className="text-sm uppercase text-white font-bold">Contact us</div>
+            <a className="my-3 block text-white" href="/#">house number 54, Street number 2 Chungi Amair Sidhu <span className="text-teal-600 text-xs p-1"></span></a>
+            <a className="my-3 block text-white"  href="mailto:abubakkarsajid4@gmail.com">abubakkarsajid4@gmail.com <span className="text-teal-600 text-xs p-1"></span></a>
+          </div>
+        </div>
+      </div>
+{/* 
+      <div className="bg-gray-100 pt-2">
+        <div className="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col max-w-screen-lg items-center">
+          <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+            <a href="/#" className="w-6 mx-1">
+              <svg className="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
+                <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627 5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168 -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676 0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411 -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166 0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929 -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379 0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009 -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049 -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838 1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0 -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0 6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298 0.771,-0.67 1.054,-1.093Z"></path>
+              </svg>
+            </a>
+            <a href="/#" className="w-6 mx-1">
+              <svg className="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
+                <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627 5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422 0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784 -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+              </svg>
+            </a>
+            <a href="/#" className="w-6 mx-1">
+              <svg className="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
+                <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562 -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0 -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375 -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938 -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125 0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0 2.437,0.375 5.75,0.375c3.312,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0 1.125,-0.375 1.313,-0.938l0,-0.062c0,-0.062 0,-0.125 0.062,-0.188c0.063,-0.625 0.25,-1.938 0.25,-3.437c0,-1.5 -0.187,-2.813 -0.25,-3.438Zm-6.125,5.301c-0.625,0 -1.125,-0.563 -1.125,-1.25c0,-0.688 0.5,-1.25 1.125,-1.25c0.625,0 1.125,0.563 1.125,1.25c0,0.687 -0.5,1.25 -1.125,1.25Zm3.5,-1.25c0,-1.188 -0.875,-2.125 -1.938,-2.125c-1.062,0 -1.938,0.937 -1.938,2.125c0,1.188 0.875,2.125 1.938,2.125c1.062,0 1.938,-0.937 1.938,-2.125Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div> */}
+    </>
+  );
+};
 
-        <span class="ml-3 text-xl text-white">Abu Bakkar</span>
-        
-      </a>
-      <span class="inline-flex mt-2 ml-8">
-  <a id='a' href="https://www.facebook.com/devabubakkarsajid" target='blank' class="text-gray-600 hover:text-blue-500 transition-transform duration-300 transform hover:scale-110 text-2xl">
-    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-    </svg>
-  </a>
-  <a id='a' href="/" class="ml-3 text-gray-500 hover:text-blue-500 transition-transform duration-300 transform hover:scale-110">
-    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-    </svg>
-  </a>
-  <a id='a' href="https://www.instagram.com/dev_abubakkar/" target='blank'class="ml-3 text-gray-500 hover:text-blue-500 transition-transform duration-300 transform hover:scale-110">
-    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-    </svg>
-  </a>
-  <a id='a' href='https://pk.linkedin.com/in/mughal-abu-bakkar-405a35339' target='blank' class="ml-3 text-gray-500 hover:text-blue-500 transition-transform duration-300 transform hover:scale-110">
-    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-      <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-      <circle cx="4" cy="4" r="2" stroke="none"></circle>
-    </svg>
-  </a>
-</span>
-      {/* <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p> */}
-    </div>
-    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-      
-      
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">Home </a>
-          </li>
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">About </a>
-          </li>
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">Services</a>
-          </li>
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">Contact us</a>
-          </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-50 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">FaceBook</a>
-          </li>
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">Instagram</a>
-          </li>
-          <li>
-            <a href='/' class="text-white hover:text-gray-800">MI-Networks</a>
-          </li>
-        
-        </nav>
-      </div>
-    </div>
-  </div>
- 
-</footer>
-  )
-}
+

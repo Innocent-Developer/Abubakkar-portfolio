@@ -41,3 +41,20 @@
     }
 
 }
+/* Animation for the progress bar */
+.rc-progress-line-path {
+    stroke-dashoffset: 100px; /* Start with the bar hidden */
+    transition: stroke-dashoffset 1s ease-in-out;
+  }
+  
+  /* Add the animation when the page loads */
+  .rc-progress-line-path.animate {
+    stroke-dashoffset: 0;
+  }
+  
+  /* Optional: Styling for the bars */
+  .rc-progress-line {
+    width: 100%;
+    height: 20px;
+  }
+  
