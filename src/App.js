@@ -8,6 +8,11 @@ import { Services } from "./files/Services";
 import { Routes, Route } from "react-router-dom";
 import { Skill } from "./files/Skill";
 import { Main } from "./files/Main";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+  
+AOS.init();
 
 function App() {
   return (
@@ -21,21 +26,21 @@ function App() {
             <Main />
               {/* <Home /> */}
               <About />
-              <Skill />
-              <Services />
-              <Contact />
-              <FeedBack />
-            </>
-          }
-        />
-       <Route path="/about" element={<About />} />
-       <Route path="/services" element={<Services />} />
-       <Route path="/contact" element={<Contact />} />
-       <Route path="/feedback" element={<FeedBack />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-}
+                  <Skill />
+                  <Services />
+                  <Contact />
+                  <FeedBack />
+                </>
+              }
+            />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/feedback" element={<FeedBack />} />
+          </Routes>
+          <Footer />
+        </>
+      );
+    }
 
-export default App;
+    export default App;

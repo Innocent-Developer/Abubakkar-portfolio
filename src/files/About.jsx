@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <>
    <section class="text-white bg-black  body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" data-aos="zoom-out-down">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 id='about' class="title-font sm:text-4xl text-4xl mb-4 font-medium text-white">About US
       </h1>
